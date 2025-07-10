@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(to right, #fceabb, #b7e9fa, #f6c1c3);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+h1 {
+  color: rgb(81, 80, 81);
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: rgb(81, 80, 81);
+}
+
+.board {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.column {
+  flex: 1;
+  min-width: 280px;
+  background-color: #fdfdfd;
+  border-radius: 16px;
+  padding: 20px;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.todo {
+  background-color: #fff9db;
+}
+
+.progress {
+  background-color: #e0f0ff;
+}
+
+.done {
+  background-color: #ffe0eb;
+}
+
+.column h2 {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.tasks {
+  flex-grow: 1;
+}
+
+.task {
+  background: white;
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  font-size: 14px;
+}
+
+.task-title {
+  font-weight: 600;
+}
+
+.task-date {
+  font-size: 12px;
+  color: #666;
+  margin-top: 6px;
+}
+
+.task-controls {
+  margin-top: 8px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.task-controls button {
+  padding: 4px 8px;
+  font-size: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #eee;
+}
+
+.task-controls button:hover {
+  background-color: #ccc;
+}
+
+.add-task {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.add-task input {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.add-task button {
+  padding: 10px;
+  background-color: #c4a0e8;
+  color: rgb(142, 65, 161);
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.add-task button:hover {
+  background-color: #0056b3;
+}
